@@ -1,0 +1,4 @@
+# npm publish ignore placeholders
+test/
+examples/
+.github/

@@ -1,0 +1,74 @@
+{
+  "name": "node-rate-guard",
+  "version": "1.0.0",
+  "description": "TypeScript-friendly rate limiting middleware for Node.js apps. Supports memory and Redis stores.",
+  "license": "MIT",
+  "author": "majid2851",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rate-limit",
+    "rate-limiting",
+    "ratelimit",
+    "express",
+    "middleware",
+    "api",
+    "security",
+    "throttle",
+    "redis",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/majid2851/node-rate-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/majid2851/node-rate-guard/issues"
+  },
+  "homepage": "https://github.com/majid2851/node-rate-guard#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src test examples",
+    "dev:example": "tsx examples/express-basic.ts",
+    "dev:login": "tsx examples/express-login.ts",
+    "dev:redis": "tsx examples/express-redis.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "redis": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "express": "^5.0.0",
+    "redis": "^4.7.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  }
+}
