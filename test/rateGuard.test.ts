@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import type { Request, Response, NextFunction } from "express";
+import type { Request, Response } from "express";
 import { rateGuard } from "../src/middleware/rateGuard.js";
 import { MemoryStore } from "../src/stores/memoryStore.js";
 

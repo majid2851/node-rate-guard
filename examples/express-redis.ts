@@ -25,7 +25,7 @@ async function main() {
   try {
     await redis.connect();
     console.log("✅ Connected to Redis");
-  } catch (error) {
+  } catch {
     console.error("❌ Failed to connect to Redis server");
     console.error("Make sure Redis is running on localhost:6379");
     console.error("\nQuick fix:");
@@ -74,7 +74,7 @@ async function main() {
     server.close();
     try {
       await redis.quit();
-    } catch (error) {
+    } catch {
       // Redis might already be disconnected
     }
     process.exit(0);

@@ -17,6 +17,8 @@ const DEFAULT_MAX = 100;
 const DEFAULT_STATUS_CODE = 429;
 const DEFAULT_MESSAGE = "Too many requests, please try again later.";
 
+// Default handler for rate limit exceeded (unused but kept for reference)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function defaultHandler(
   _req: Request,
   res: Response,
