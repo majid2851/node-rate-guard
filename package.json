@@ -1,6 +1,6 @@
 {
   "name": "node-rate-guard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript-friendly rate limiting middleware for Node.js apps. Supports memory and Redis stores.",
   "license": "MIT",
   "author": "majid2851",
@@ -32,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/majid2851/node-rate-guard.git"
+    "url": "git+https://github.com/majid2851/node-rate-guard.git"
   },
   "bugs": {
     "url": "https://github.com/majid2851/node-rate-guard/issues"
